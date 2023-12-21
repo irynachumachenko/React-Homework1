@@ -41,7 +41,9 @@ const App = () => {
 
     return (
         <div id={'wrapper'} className={'wrapper'}>
-            <Card coursesInfo={courses}  />
+            {courses.map((course) => (
+                <Card key={course.id} courseInfo={course} />
+            ))}
         </div>
     );
 };
