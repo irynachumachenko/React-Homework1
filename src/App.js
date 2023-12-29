@@ -1,10 +1,10 @@
 import './App.css';
-import Counter from "./components/Counter/Counter";
+import Data from "./components/Data/Data";
 
 const App = () => {
     return (
         <div id={'wrapper'} className={'wrapper'}>
-            <Counter/>
+            <Data/>
         </div>
     );
 };
