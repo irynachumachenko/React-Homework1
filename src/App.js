@@ -1,11 +1,14 @@
 import './App.css';
-import Data from "./components/Data/Data";
+import {Routes, Route} from 'react-router-dom';
+import UserList from './components/UserList/UserList';
+import UserDetail from './components/UserDetail/UserDetail';
 
 const App = () => {
     return (
-        <div id={'wrapper'} className={'wrapper'}>
-            <Data/>
-        </div>
+        <Routes>
+            <Route path="/" element={<UserList/>}/>
+            <Route path="/:id" element={<UserDetail/>}/>
+        </Routes>
     );
 };
 
