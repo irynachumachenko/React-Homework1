@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import { UserInfoContext } from '../../App';
+import { UserContext } from '../../context/UserInfoContext';
 
 const UserCard = () => {
-    const data = useContext(UserInfoContext);
+    const data = useContext(UserContext);
     return (
         <div>
             <p>User name: {data.name}</p>
